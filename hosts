@@ -1,0 +1,7 @@
+#This is the syntax if the variables wern't specified in the ansible.cfg file.  Writing an ansible.cfg sums up the line so you dont have to specify it per host
+#testserver ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ansible_ssh_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/default/virtualbox/private_key
+#
+#The below line is how you specify hosts if you have a ansible.cfg file with the already specified arguments.
+
+[webservers]
+testserver ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
